@@ -628,6 +628,9 @@ function getBenchmarkStep() {
   return {
     key: "benchmark",
     label: "📊 Benchmark",
+    agents: {
+      queue: "build-zig",
+    },
     group: "linux-x64",
     command: "bun .buildkite/scripts/upload-benchmark.ts",
     depends_on: [`linux-x64-build-bun`],
