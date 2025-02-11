@@ -627,7 +627,7 @@ function getReleaseStep(buildPlatforms, options) {
 function getBenchmarkStep() {
   return {
     key: "benchmark",
-    label: "📊",
+    label: "📊 Benchmark",
     command: "bun .buildkite/scripts/upload-benchmark.ts",
     depends_on: [`linux-x64-build-bun`],
   };
